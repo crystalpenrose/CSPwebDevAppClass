@@ -1,6 +1,25 @@
 
 body {
     background-size: cover;
-    background-image:url('beachbackground.gif');
-    
+    background-color: white;
 }
+
+ .flex-container {
+    display: flex;
+    height: 600px
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+}
+
+@media (max-width: 800px) {
+    .flex-container {
+      flex-direction: column;
+        
+.flex-container > div {
+    width: 80px;
+    margin: 10px;
+    text-align: center;
+    font-size: 10pt;
+    }
+  
